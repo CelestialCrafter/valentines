@@ -9,6 +9,16 @@
       yes: "u shouldin be here >:c",
       no: "STOP BREAKIMG MY CODE >:((((((((((",
     },
+    "3": {
+      text: "o myGUOBAAA YAAAYYYYY",
+      yes: "HAPPY HAPPY HAPPY",
+      no: "JUS KIBINGG!! i super duper trolled u LOSR",
+    },
+    "2": {
+      text: "r u trolimg me...... >:c",
+      yes: "nyuh uhhhhh... i woul nevr trol,,",
+      no: "maybe.....ee",
+    },
     "1": {
       text: "YAAAAYWYYWYAYWAYYAYYYY :33 REALY??",
       yes: "MHM!!! YAA ILL BE UR VALENTIB",
@@ -21,8 +31,18 @@
     },
     "-1": {
       text: "wah... realy? :(",
-      yes: "yooo im jus kidimg 😊",
+      yes: "nyooo im jus kidimg 😊",
       no: "yah ur a loser :3cn",
+    },
+    "-2": {
+      text: "WYYYY :C",
+      yes: "umm..  i piked da wrong thing :3",
+      no: "cuz u SUK AND UR STUPID",
+    },
+    "-3": {
+      text: "*kil you*",
+      yes: "NYUHH IW AS JOKIMGG STOPPY AAH",
+      no: "*blegh*",
     },
   };
 
