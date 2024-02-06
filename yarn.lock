@@ -10,6 +10,11 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@catppuccin/palette@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@catppuccin/palette/-/palette-1.0.3.tgz#bba59f0b03836f27a11630b3de740038823c9e5a"
+  integrity sha512-L3jclhx8z7Oyv4b1x9TCXjikvLbKd+dwksNOJsi6W811PPGdP38PYiX5h4/renukOp8lUEkPIPv07S/5HA3tVg==
+
 "@esbuild/aix-ppc64@0.19.12":
   version "0.19.12"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.19.12.tgz#d1bc06aedb6936b3b6d313bf809a5a40387d2b7f"
@@ -301,6 +306,11 @@ axobject-query@^4.0.0:
   dependencies:
     dequal "^2.0.3"
 
+canvas-confetti@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/canvas-confetti/-/canvas-confetti-1.9.2.tgz#c9f74098c7fdf66dd9d1aab5d381061cf74e48f0"
+  integrity sha512-6Xi7aHHzKwxZsem4mCKoqP6YwUG3HamaHHAlz1hTNQPCqXhARFpSXnkC9TWlahHY5CG6hSL5XexNjxK8irVErg==
+
 code-red@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/code-red/-/code-red-1.0.4.tgz#59ba5c9d1d320a4ef795bc10a28bd42bfebe3e35"
@@ -388,6 +398,15 @@ estree-walker@^3.0.0, estree-walker@^3.0.3:
   dependencies:
     "@types/estree" "^1.0.0"
 
+fs-extra@^8.0.1:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fsevents@~2.3.2, fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
@@ -403,6 +422,11 @@ globrex@^0.1.2:
   resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
   integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
+graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
+  integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
+
 import-meta-resolve@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/import-meta-resolve/-/import-meta-resolve-4.0.0.tgz#0b1195915689f60ab00f830af0f15cc841e8919e"
@@ -414,6 +438,22 @@ is-reference@^3.0.0, is-reference@^3.0.1:
   integrity sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==
   dependencies:
     "@types/estree" "*"
+
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  integrity sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
+jsonfile@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-5.0.0.tgz#e6b718f73da420d612823996fdf14a03f6ff6922"
+  integrity sha512-NQRZ5CRo74MhMMC3/3r5g2k4fjodJ/wh8MxjFbCViWKFjxrnudWSY5vomh+23ZaXzAS7J3fBZIR2dV6WbmfM0w==
+  dependencies:
+    universalify "^0.1.2"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 kleur@^4.1.5:
   version "4.1.5"
@@ -565,6 +605,26 @@ totalist@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/totalist/-/totalist-3.0.1.tgz#ba3a3d600c915b1a97872348f79c127475f6acf8"
   integrity sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==
+
+twemoji-parser@14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-14.0.0.tgz#13dabcb6d3a261d9efbf58a1666b182033bf2b62"
+  integrity sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==
+
+twemoji@^14.0.2:
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/twemoji/-/twemoji-14.0.2.tgz#c53adb01dab22bf4870f648ca8cc347ce99ee37e"
+  integrity sha512-BzOoXIe1QVdmsUmZ54xbEH+8AgtOKUiG53zO5vVP2iUu6h5u9lN15NcuS6te4OY96qx0H7JK9vjjl9WQbkTRuA==
+  dependencies:
+    fs-extra "^8.0.1"
+    jsonfile "^5.0.0"
+    twemoji-parser "14.0.0"
+    universalify "^0.1.2"
+
+universalify@^0.1.0, universalify@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
+  integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
 vite@^5.0.3:
   version "5.0.12"
