@@ -1,0 +1,106 @@
+@import "@catppuccin/palette/css/catppuccin.css";
+
+* {
+	font-family: 'sans-serif';
+}
+
+html, body {
+	background-color: var(--ctp-mocha-base);
+	margin: 0.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+button {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.45rem;
+	background-color: var(--ctp-mocha-surface0);
+	min-width: 5rem;
+}
+
+button:hover {
+	transition: background-color 0.45s;
+	background-color: var(--ctp-mocha-surface1);
+}
+
+h1, span, button, img {
+	color: var(--ctp-mocha-text);
+}
+
+img {
+	object-fit: fill;
+	margin-bottom: 1rem;
+}
+
+#info {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	margin: 1rem;
+}
+
+#info a {
+	align-self: center;
+	color: var(--ctp-mocha-subtext0);
+	text-decoration: none;
+	transition: opacity 0.45s
+}
+
+#debug {
+	margin-bottom: 1rem;
+}
+
+#debug span {
+	color: var(--ctp-mocha-subtext0);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+		transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  25% {
+		transform: translateY(10rem);
+  }
+
+  75% {
+		transform: translateY(-10rem);
+  }
+
+  100% {
+		transform: translateY(0rem);
+  }
+}
+
+@keyframes intenseshake {
+	0% { transform: translate(1rem, 1rem) rotate(0deg); }
+  20% { transform: translate(-3rem, 0rem) rotate(1deg); }
+  40% { transform: translate(1rem, -1rem) rotate(1deg); }
+  60% { transform: translate(-3rem, 1rem) rotate(0deg); }
+  80% { transform: translate(-1rem, -1rem) rotate(1deg); }
+  100% { transform: translate(1rem, -2rem) rotate(-1deg); }
+}
+
+@keyframes shake {
+	0% { transform: translate(0.5rem, 0.5rem) rotate(0deg); }
+  20% { transform: translate(-1.5rem, 0rem) rotate(0.5deg); }
+  40% { transform: translate(0.5rem, -0.5rem) rotate(0.5deg); }
+  60% { transform: translate(-1.5rem, 0.5rem) rotate(0deg); }
+  80% { transform: translate(-0.5rem, -0.5rem) rotate(0.5deg); }
+  100% { transform: translate(0.5rem, -1rem) rotate(-0.5deg); }
+}
