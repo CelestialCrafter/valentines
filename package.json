@@ -17,6 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"@catppuccin/palette": "^1.0.3",
+		"@sveltejs/adapter-static": "^3.0.1",
 		"canvas-confetti": "^1.9.2",
 		"twemoji": "^14.0.2"
 	}
