@@ -1,7 +1,7 @@
 @import "@catppuccin/palette/css/catppuccin.css";
 
 * {
-	font-family: 'sans-serif';
+	font-family: 'sans-serif', arial;
 }
 
 html, body {
