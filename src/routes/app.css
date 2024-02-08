@@ -4,11 +4,12 @@
 	font-family: 'sans-serif', arial;
 }
 
-html, body {
+html, body, body {
+	width: 100vw;
+	height: 100vh;
 	background-color: var(--ctp-mocha-base);
 	margin: 0.2rem;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
@@ -18,6 +19,7 @@ button {
 	border: none;
 	border-radius: 0.5rem;
 	padding: 0.45rem;
+	margin: 0.2rem;
 	background-color: var(--ctp-mocha-surface0);
 	min-width: 5rem;
 }
@@ -34,6 +36,17 @@ h1, span, button, img {
 img {
 	object-fit: fill;
 	margin-bottom: 1rem;
+}
+
+#answers {
+	width: 50%;
+	height: 7%;
+	display: flex;
+	justify-content: center;
+}
+
+#answers button {
+	flex: 1;
 }
 
 #info {

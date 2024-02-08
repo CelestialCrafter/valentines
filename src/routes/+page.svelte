@@ -61,7 +61,7 @@
     },
   };
 
-  const isValentines = () => {
+  let isValentines = () => {
     const date = new Date();
     return date.getMonth() == 1 && date.getDate() === 14;
   };
@@ -100,7 +100,7 @@
         setTimeout(() => (credits.style.opacity = 1), 1000);
       }
 
-      document.body.style.animation = `0.5s linear 2 ${animation}`;
+      document.body.style.animation = `0.35s linear 2 ${animation}`;
     }
   }
 
@@ -140,12 +140,16 @@
     <img id="image" src="/stage{stage}.gif" alt="emotion" />
     <h1>{currentStage.text}</h1>
     <div id="answers">
-      <button id="yes" on:click={() => stage++}>{@html currentStage.yes}</button
+      <button
+        id="yes"
+        on:click={() => stage++}
+        style="flex-grow: {(Math.abs(stage) / max) * 2 + 1};"
+        >{@html currentStage.yes}</button
       >
       <button
         id="no"
         on:click={() => stage--}
-        style="opacity: {Math.max((stage + max) / max, 0.1)}"
+        style="opacity: {Math.min(Math.max((stage + max) / max, 0.1), 1)}"
         >{@html currentStage.no}</button
       >
     </div>
@@ -194,6 +198,10 @@
     on:contextmenu={(event) => {
       event.preventDefault();
       debug = !debug;
+    }}
+    on:drag={() => {
+      isValentines = () => true;
+      alert("valentines bypass activated");
     }}>made by celestial ❤️</a
   >
 </div>
