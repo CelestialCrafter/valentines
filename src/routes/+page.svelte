@@ -137,7 +137,7 @@
 {#if isValentines()}
   {#if ending === "none"}
     <h1>valentines game!! &lt;3</h1>
-    <img id="image" src="/stage{stage}.gif" alt="emotion" />
+    <img id="image" src="stage{stage}.gif" alt="emotion" />
     <h1>{currentStage.text}</h1>
     <div id="answers">
       <button
@@ -160,11 +160,11 @@
         ? "."
         : "!"}
     </h1>
-    <img src="/ending-{ending}.gif" alt="{ending} ending" />
+    <img src="ending-{ending}.gif" alt="{ending} ending" />
     <span>{@html currentEnding.text}</span>
   {/if}
 {:else}
-  <img id="image" src="/goaway.gif" alt="GO AWAY!!! LOSER!!" />
+  <img id="image" src="goaway.gif" alt="GO AWAY!!! LOSER!!" />
 
   <h1>
     erm... are u tupid???<br />
